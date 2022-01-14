@@ -60,4 +60,4 @@
 
 ## So which cloud storage system is right for you? Block or file storage could be useful if you’re dealing with a lot of data that members of a team have to change frequently. You might find that block storage works best for you if you need to store an organized collection of data that you can access quickly. File storage has the advantage that the data is easy to manipulate directly without a custom-built interface. But if you need highly scalable storage units for relatively unstructured data, that is where object storage shines. Whatever path you decide, now you have a sense of the use cases, advantages, and disadvantages of different storage types to weigh your next step into the cloud storage ecosystem.
 
-![img](./01.jpg)
+![img](img/03.jpg)
