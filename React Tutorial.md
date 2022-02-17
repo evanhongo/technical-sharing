@@ -32,3 +32,4 @@
 
 # Reference
 - ## [When to useLayoutEffect Instead of useEffect](https://daveceddia.com/useeffect-vs-uselayouteffect/)
+- ## [Difference between useEffect and useLayoutEffect](https://codesandbox.io/s/useeffect-18s01e)
