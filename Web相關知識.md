@@ -25,6 +25,12 @@
 
 ---
 
+# 瀏覽器頁面渲染過程
+![img](img/10.jpg)
+![img](img/11.jpg)
+
+---
+
 # DNS域名解析過程
 ![img](img/12.jpg)
 ![img](img/13.jpg)
@@ -32,6 +38,7 @@
 ---
 
 # Reference
+- ## [瀏覽器渲染頁面的流程](https://www.bilibili.com/video/BV18f4y1H7Zu?spm_id_from=333.999.0.0)
 - ## [DNS域名解析過程](https://www.bilibili.com/video/BV1uL4y1B7aE?spm_id_from=333.999.0.0)
 - ## [Root Zone Management](https://www.iana.org/domains/root/servers)
 - ## [VPN概念、技術原理及誤區](https://www.bilibili.com/video/BV1KY411t75D?spm_id_from=333.999.0.0)
