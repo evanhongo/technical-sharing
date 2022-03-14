@@ -1,8 +1,25 @@
 # What You Should Know About HTTP 
-
+![img](img/20.jpg)
 ![img](img/04.jpg)
 ![img](img/05.jpg)
 ![img](img/06.jpg)
+
+---
+
+# HTTP/1.1
+
+## **Cache Control**
+## Read next section for more detail
+
+<br/>
+
+## **Persistent Connection**
+![img](img/21.jpg)
+
+<br/>
+
+## **Request Pipelining**
+![img](img/22.jpg)
 
 ---
 
@@ -12,28 +29,22 @@
 ## Multiplexing will allow multiple requests and response messages to retrieve resources in a single TCP connection simultaneously.
 ![img](img/14.jpg)
 
+<br/>
+
 ## **Header Compression**
 ## Each request via HTTP contains header information. With HTTP/1.1, many headers are repeated in one session and duplicate the same info. This overhead is considerable, HTTP/2 removes the excess header while pressing the remaining headers and forcing all HTTP headers to be sent in a compressed format.
+
+<br/>
 
 ## **Server Push**
 ## With HTTP/1.1 it must wait for the client to send the connection. Server Push allows the server to avoid delays in sending data by “pushing” responses that it claims the client needs to cache it and automatically this will speed up page load time by reducing the number of requests.
 ![img](img/15.jpg)
 
+<br/>
+
 ## **Binary Format**
 ## HTTP/1.1 sends data in the textual format, while HTTP/2 sends data in binary format. Binary protocols are more efficient to parse and reduce the number of errors, compared to previous versions of textual protocols.
 ![img](img/16.jpg)
-
----
-
-# 瀏覽器頁面渲染過程
-![img](img/10.jpg)
-![img](img/11.jpg)
-
----
-
-# DNS域名解析過程
-![img](img/12.jpg)
-![img](img/13.jpg)
 
 ---
 
@@ -71,9 +82,23 @@
 
 ---
 
+# 瀏覽器頁面渲染過程
+![img](img/10.jpg)
+![img](img/11.jpg)
+
+---
+
+# DNS域名解析過程
+![img](img/12.jpg)
+![img](img/13.jpg)
+
+---
+
 # Reference
 - ## [瀏覽器渲染頁面的流程](https://www.bilibili.com/video/BV18f4y1H7Zu?spm_id_from=333.999.0.0)
 - ## [DNS域名解析過程](https://www.bilibili.com/video/BV1uL4y1B7aE?spm_id_from=333.999.0.0)
 - ## [HTTP Header: Cache-Control](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Headers/Cache-Control)
 - ## [Root Zone Management](https://www.iana.org/domains/root/servers)
 - ## [VPN概念、技術原理及誤區](https://www.bilibili.com/video/BV1KY411t75D?spm_id_from=333.999.0.0)
+- ## [HTTP隊頭阻塞是什麼](https://itw01.com/I97CEU2.html)
+- ## [TCP隊頭阻塞與HTTP隊頭阻塞](https://linkexin.github.io/notes/TCP-%E9%98%9F%E5%A4%B4%E6%8B%A5%E5%A1%9E-%E5%92%8C-HTTP-%E9%98%9F%E5%A4%B4%E6%8B%A5%E5%A1%9E-%E5%92%8C-QUIC)
