@@ -35,3 +35,4 @@
 - ## [Difference between useEffect and useLayoutEffect](https://codesandbox.io/s/useeffect-18s01e)
 - ## [Should You Really Use useMemo in React?](https://medium.com/swlh/should-you-use-usememo-in-react-a-benchmarked-analysis-159faf6609b7)
 - ## [Performance Profling](https://ithelp.ithome.com.tw/articles/10279567)
+- ## [React 18: useTransition() vs useDeferredValue()](https://academind.com/tutorials/react-usetransition-vs-usedeferredvalue)
