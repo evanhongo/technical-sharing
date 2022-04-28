@@ -1,3 +1,54 @@
+# 緩存讀寫機制
+
+## **Read-Aside**
+![img](img/31.jpg)
+## 應用直接去緩存中找數據，命中緩存則直接返回，如果未命中緩存，則需要先去資料庫中查詢數據，並將查詢到的數據存儲到緩存中
+
+<br/>
+
+## **Read-Through**
+![img](img/32.jpg)
+## Read-Through 的方式與 Read-Aside 的方式很接近，區別在於，Read-Aside 是通過應用程式來更新緩存中的數據，而 Read-Through 則是通過緩存自身來更新數據，也就是說應用和資料庫之間不直接進行連接
+
+<br/>
+
+## **Write-Through**
+![img](img/33.jpg)
+## 先將數據寫入到緩存中，然後由緩存將數據存入到資料庫中
+## Write-Through 與 Read-Through 相結合可以很好的解決緩存和資料庫中數據不一致的問題，Write-Through 每次都會先更新緩存中的數據，所以每次讀到的數據也是最新的
+
+<br/>
+
+## **Write-Around**
+![img](img/34.jpg)
+## 並不會用到緩存，而是會直接寫入到資料庫中
+
+<br/>
+
+## **Write-Back**
+![img](img/35.jpg)
+## 寫了多次緩存後才會寫一次資料庫，可以大大減輕伺服器的壓力，但如果緩存出現了問題，那麼緩存中這部分沒有持久化的數據就會丟失
+
+<br/>
+
+## `Use Case` :
+
+## Read-Aside/Write-Around
+## Read-Through/Write-Around : 只需要寫一次並且讀多次的情況，比如聊天信息的寫入和獲取
+
+## Read-Through/Write-Through
+
+## Read-Through/Write-Back
+
+<br/>
+
+## **Q & A**
+## Q : Cache-Aside 為什麼要配合 Write-Around 而不能和 Write-Through 一起使用
+
+## A : 因為 Write-Through 會先更新緩存，而如果這時剛好有另外一個線程將資料庫中舊的數據讀取出來將緩存中新的數據覆蓋，就會造成數據錯誤，而使用 Write-Around 就不會出現這個問題
+
+---
+
 # 使用快取所需要留意的事情
 ## **緩存雪崩(Cache Avalanche)**：緩存在同一時刻全部失效，造成瞬時DB請求量大、壓力驟增，引起雪崩。緩存雪崩通常因為緩存服務器宕機、緩存的 key 設置了相同的過期時間等引起。
 
