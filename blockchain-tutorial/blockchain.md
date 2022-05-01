@@ -27,4 +27,3 @@
 - ## [分散式分類帳和區塊鏈有何不同？](https://www.ithome.com.tw/news/105609)
 - ## [Ethereum的EVM與智能合約](https://ithelp.ithome.com.tw/articles/10216369)
 - ## [十五分鐘略懂區塊鏈技術](https://www.youtube.com/watch?v=XZdzMfqtRh8)
-- ## [Become a Web 3 & Blockchain Developer](https://www.youtube.com/watch?v=aVQJGr2J8io)
