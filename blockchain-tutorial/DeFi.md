@@ -48,3 +48,9 @@
 
 ## ▍核實、修正資料正確性更加困難
 ## 區塊鏈僅讓資料難以竄改，卻無法遏止錯誤的資訊上鏈。錯誤的數據可能引起金融蝴蝶效應。
+
+---
+
+# Reference
+
+- ## [What Is the Difference Between a Crypto Coin and a Token?](https://web3.hashnode.com/what-is-the-difference-between-a-crypto-coin-and-a-token)
