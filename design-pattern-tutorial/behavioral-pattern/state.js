@@ -1,7 +1,3 @@
-/////////////////////
-//  State Pattern  //
-/////////////////////
-
 class TrafficLight {
   constructor() {
     this.state = new Red(this);
