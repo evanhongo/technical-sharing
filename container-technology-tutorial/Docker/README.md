@@ -60,6 +60,19 @@ curl -X GET http://localhost:5000/v2/_catalog
 
 ---
 
+# Push and Deploy a Docker Image on Heroku
+
+```sh
+heroku login
+heroku container:login
+docker build  -t registry.heroku.com/<your-app>/web .
+docker push registry.heroku.com/<your-app>/web
+# Deploy
+heroku container:release web -a <your-app>
+```
+
+---
+
 # Minify Docker Image
 
 ```sh

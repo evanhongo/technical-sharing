@@ -19,4 +19,7 @@ docker save <image_name> | gzip -c > myapp.tar.gz
 # Load an image from a tar archive
 docker load -i myapp.tar
 gunzip -c myapp.tar.gz | docker load
+
+# Remove "none" tag images
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 ```
