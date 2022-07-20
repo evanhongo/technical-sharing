@@ -62,6 +62,13 @@ credentials: 'include'
 
 ---
 
+# List of Attacks
+- ## [CSRF](https://owasp.org/www-community/attacks/csrf)
+- ## [XSS](https://owasp.org/www-community/attacks/xss)
+- ## [Reverse Tabnabbing](https://owasp.org/www-community/attacks/Reverse_Tabnabbing)
+
+---
+
 # Reference
 - ## [HTTPS 背後的功臣](https://medium.com/starbugs/security-ssl-https-%E8%83%8C%E5%BE%8C%E7%9A%84%E5%8A%9F%E8%87%A3-df714e4df77b)
 - ## [HTTPS是什麼？](https://www.bilibili.com/video/BV1KY411x7Jp?spm_id_from=333.999.0.0)
